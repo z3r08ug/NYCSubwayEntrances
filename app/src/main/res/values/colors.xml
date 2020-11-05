@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lynch">#607D8B</color>
+    <color name="fiord">#455A64</color>
+    <color name="tower_gray">#B0BEC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_60">#99000000</color>
+
+    <color name="lines_a_c_e">#0039a6</color>
+    <color name="lines_b_d_f_m">#ff6319</color>
+    <color name="lines_g">#6cbe45</color>
+    <color name="lines_l">#a7a9ac</color>
+    <color name="lines_j_z">#996633</color>
+    <color name="lines_n_q_r_w">#fccc0a</color>
+    <color name="lines_1_2_3">#ee352e</color>
+    <color name="lines_4_5_6">#00933c</color>
+    <color name="lines_7">#b933ad</color>
+    <color name="lines_t">#00add0</color>
+    <color name="lines_s_shuttles">#808183</color>
+
+
+</resources>
