@@ -32,7 +32,12 @@
 - An example of endpoint response body is shown here, where the
     - `NAME` is `index` of `10` and
     - `LINE` is `index` of `12` 
-    - The `index` value can change in the response body. So the logic should be to find `index` value for `NAME` (and other fields) and look for it's value at the `index` position in the `data` array
+    - The `index` value can change in the `columns`. So the logic should be to 
+        - Find `index` values in `columns` where `fieldName` is
+            - `name` for the station name,
+            - `the_geom` for coordinates and
+            - `line` for subway lines
+        - Use those `index` values to get the data from within the `data` array
         ```json
         {
             "columns": [
