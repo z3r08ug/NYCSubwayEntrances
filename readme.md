@@ -29,14 +29,23 @@
             }
             ```
 
-- The endpoint response body will contain data in the following format, where the
-    - `index` of `10` is the name of the station
-    - `index` of `11` contains the coordinates
-    - `index` of `12` contains the lines available at that station - in this example, lines `2` and `5`
+- An example of endpoint response body is shown here, where the
+    - `NAME` is `index` of `10` and
+    - `LINE` is `index` of `12` 
+    - The `index` value can change in the response body. So the logic should be to find `index` value for `NAME` (and other fields) and look for it's value at the `index` position in the `data` array
         ```json
         {
             "columns": [
-                ...
+                {
+                    "index": 10,
+                    "name": "NAME",
+                    "fieldName": "name"
+                },
+                {
+                    "index": 12,
+                    "name": "LINE",
+                    "fieldName": "line"
+                }
             ],
             "data": [
                 [
