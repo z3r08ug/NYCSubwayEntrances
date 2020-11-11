@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/subwayNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/staion_name"
+        />
+
+    <TextView
+        android:id="@+id/subwayCoordinatesTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subwayNameTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/coordinates"
+        />
+
+    <TextView
+        android:id="@+id/subwayLinesTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subwayCoordinatesTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/lines"
+        />
+
+</RelativeLayout>

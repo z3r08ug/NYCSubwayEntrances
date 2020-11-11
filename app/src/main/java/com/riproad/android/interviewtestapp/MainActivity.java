@@ -3,9 +3,9 @@ package com.riproad.android.interviewtestapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
-        // todo: start the new Activity here
+//        Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, SubwayEntrancesActivity.class));
     }
 }
